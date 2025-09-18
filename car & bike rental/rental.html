@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car & Bike Rental</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f9f9f9; }
+    header { background: #222; color: white; text-align: center; padding: 1.5rem; }
+    nav { background: #444; text-align: center; padding: 12px; }
+    nav a { color: white; margin: 0 10px; text-decoration: none; font-weight: bold; }
+    nav a:hover { color: #ffd700; }
+    .container { padding: 20px; }
+    .vehicles { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    .vehicle-card { background: white; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.2); text-align: center; padding: 15px; }
+    .vehicle-card img { width: 100%; height: 160px; object-fit: cover; border-radius: 6px; }
+    .vehicle-card h3 { margin: 10px 0; }
+    .btn { display: inline-block; background: #25d366; color: white; padding: 10px 15px; border-radius: 5px; text-decoration: none; font-weight: bold; margin-top: 10px; }
+    .btn:hover { background: #1ebe5d; }
+    footer { text-align: center; background: #222; color: white; padding: 1rem; margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Car🚗 & Bike🏍️ Rental</h1>
+    <p>Book your ride easily via WhatsApp</p>
+  </header>
+
+  <nav>
+    <a href="task3.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="container">
+    <h2>Available Vehicles</h2>
+    <div class="vehicles">
+      
+      <!-- Car -->
+      <div class="vehicle-card">
+        <img src="image1.png" alt="Car">
+        <h3>Maruti Swift</h3>
+        <p>AC | 5 Seater | Manual</p>
+        <a class="btn" href="https://wa.me/917426825253?text=I want to book Maruti Swift 🚗 for my travel.">Book Now</a>
+      </div>
+
+      <!-- Bike -->
+      <div class="vehicle-card">
+        <img src="image2.png" alt="Bike">
+        <h3>Royal Enfield Classic</h3>
+        <p>350cc | Gear | Petrol</p>
+        <a class="btn" href="https://wa.me/917426825253?text=I want to book Royal Enfield Classic 🏍️ for my travel.">Book Now</a>
+      </div>
+
+      <!-- Another Car -->
+      <div class="vehicle-card">
+        <img src="image3.png" alt="Car">
+        <h3>Hyundai Creta</h3>
+        <p>AC | 7 Seater | Automatic</p>
+        <a class="btn" href="https://wa.me/917426825253?text=I want to book Hyundai Creta 🚗 for my travel.">Book Now</a>
+      </div>
+
+      <!-- Another Bike -->
+      <div class="vehicle-card">
+        <img src="image4.png" alt="Bike">
+        <h3>Activa 125</h3>
+        <p>Scooter | Automatic</p>
+        <a class="btn" href="https://wa.me/917426825253?text=I want to book Activa 125 🛵 for my travel.">Book Now</a>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Car & Bike Rental. All rights reserved.</p>
+  </footer>
+</body>
+</html>

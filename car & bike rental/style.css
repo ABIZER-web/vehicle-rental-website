@@ -1,0 +1,194 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7;
+  color: #333;
+  background: #fafafa;
+}
+
+/* Navigation */
+header {
+  background: #222;
+  color: #fff;
+  padding: 15px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #00bcd4;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 12px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 5px 8px;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+  background: #00bcd4;
+  color: #fff;
+}
+
+/* Hero Section */
+.hero {
+  height: 60vh;
+  background: url("car-bike-banner.jpg") no-repeat center center/cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.55);
+  padding: 40px;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background: #00bcd4;
+  color: #fff;
+  padding: 12px 25px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #0097a7;
+  transform: translateY(-2px);
+}
+
+/* Content Section */
+.content {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.content h2,
+.content h3 {
+  margin-bottom: 15px;
+  color: #0097a7;
+}
+
+.content p {
+  margin-bottom: 15px;
+  font-size: 1.05rem;
+  color: #444;
+}
+
+.content ul {
+  margin: 15px 0 25px 20px;
+  list-style: none;
+}
+
+.content ul li {
+  margin-bottom: 10px;
+  padding-left: 28px;
+  position: relative;
+  font-size: 1rem;
+}
+
+.content ul li::before {
+  content: "✔";
+  color: #00bcd4;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #222;
+  color: #ddd;
+  padding: 18px;
+  margin-top: 30px;
+  font-size: 0.95rem;
+}
+
+footer p {
+  opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .nav-links li {
+    margin: 8px 0;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .content {
+    margin: 20px;
+    padding: 25px;
+  }
+}
