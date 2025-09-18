@@ -61,4 +61,4 @@ Pull requests are welcome! For major changes, please open an issue first to disc
 👤 Author
 
 **Abizer Saifee**
-
+[GitHub](https://github.com/ABIZER-web) | [LinkedIn](www.linkedin.com/in/mr-abizer-saify-a3b936278)
